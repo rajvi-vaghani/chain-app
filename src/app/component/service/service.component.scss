@@ -1,0 +1,157 @@
+.services {
+  padding-top: 130px;
+  position: relative;
+
+  .section-heading {
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    z-index: 9;
+
+    .head-text {
+      color: var(--black);
+      font-size: 30px;
+      font-weight: 700;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+
+      span {
+        color: var(--blue);
+      }
+    }
+  }
+
+  .service-cards {
+    position: relative;
+    z-index: 20;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    max-height: 410px;
+    // transition: all .3s ease-in-out;
+
+    .read-more-link {
+      color: var(--blue);
+    }
+
+    &:hover {
+      background-image: url('/assets/images/service-bg.jpg');
+      background-position: right top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: var(--white);
+
+      .first-card {
+        background: url('/assets/images/service-icon-hover-01.png');
+      }
+
+      .second-card {
+        background: url('/assets/images/service-icon-hover-02.png');
+      }
+
+      .third-card {
+        background: url('/assets/images/service-icon-hover-03.png');
+      }
+
+      .fourth-card {
+        background: url('/assets/images/service-icon-hover-04.png');
+      }
+
+      .read-more-link,
+      .card-body,
+      .card-header {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.icon {
+  margin-left: 0px;
+  margin-bottom: 30px;
+  background-repeat: no-repeat !important;
+  width: 50px;
+  height: 50px;
+  // transition: all .3s ease-in-out;
+}
+
+.first-card {
+  background: url('/assets/images/service-icon-01.png');
+}
+
+.second-card {
+  background: url('/assets/images/service-icon-02.png');
+}
+
+.third-card {
+  background: url('/assets/images/service-icon-03.png');
+}
+
+.fourth-card {
+  background: url('/assets/images/service-icon-04.png');
+}
+
+
+.card-header {
+  font-size: 20px;
+  font-weight: 700;
+  // transition: all .3s ease-in-out;
+}
+
+.card-body {
+  color: var(--gray);
+  font-family: var(--font-roboto);
+  // transition: all .3s ease-in-out;
+
+  span {
+    color: var(--blue);
+  }
+}
+
+.text {
+  margin: 0 18%;
+  color: var(--gray);
+  font-family: var(--font-roboto);
+
+  span {
+    color: var(--blue);
+  }
+}
+
+.services:before {
+  content: '';
+  background-image: url('/assets/images/services-right-dec.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1136px;
+  height: 244px;
+  z-index: 0;
+}
+
+.services:after {
+  content: '';
+  background-image: url('/assets/images/services-left-dec.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  bottom: -300px;
+  width: 261px;
+  height: 368px;
+  z-index: 0;
+}
+
+@media (min-width: 993px) and (max-width: 1399px) {
+  .service-cards {
+    min-height: 410px !important;
+    max-height: 410px !important;
+  }
+
+  .read-more-link {
+    position: absolute;
+    bottom: 5%;
+  }
+}

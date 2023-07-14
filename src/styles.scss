@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+:root {
+  --black-light: #2a2a2a;
+  --black-dark: #212529;
+  --blue: #4b8ef1;
+  --white: #fff;
+  --gray: #afafaf;
+  --font-roboto: 'Roboto', sans-serif;
+}
+
+.font-gray {
+  color: var(--gray);
+}
+
+.f-15 {
+  font-size: 15px !important;
+}
+
+.f-14 {
+  font-size: 14px !important;
+}
+
+.lh-30 {
+  line-height: 30px !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.router-link {
+  cursor: pointer !important;
+}
