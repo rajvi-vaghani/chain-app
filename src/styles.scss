@@ -1,47 +1,230 @@
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
 *,
 ::after,
 ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 :root {
-  --black-light: #2a2a2a;
-  --black-dark: #212529;
-  --blue: #4b8ef1;
-  --white: #fff;
-  --gray: #afafaf;
-  --font-roboto: 'Roboto', sans-serif;
+    --black-light: #2a2a2a;
+    --black-dark: #212529;
+    --blue: #4b8ef1;
+    --white: #fff;
+    --gray: #afafaf;
+    --font-roboto: 'Roboto', sans-serif;
 }
 
 .font-gray {
-  color: var(--gray);
+    color: var(--gray);
 }
 
 .f-15 {
-  font-size: 15px !important;
+    font-size: 15px !important;
 }
 
 .f-14 {
-  font-size: 14px !important;
+    font-size: 14px !important;
 }
 
 .lh-30 {
-  line-height: 30px !important;
+    line-height: 30px !important;
 }
 
 .fw-400 {
-  font-weight: 400 !important;
+    font-weight: 400 !important;
 }
 
 .router-link {
-  cursor: pointer !important;
+    cursor: pointer !important;
+}
+
+.btn {
+    border: none;
+    box-shadow: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+header,
+nav,
+section,
+article,
+aside,
+footer,
+hgroup {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+ul {
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #afafaf;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+
+html,
+body {
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+::selection {
+    background: #4b8ef1;
+    color: #fff !important;
+}
+
+::-moz-selection {
+    background: #4b8ef1;
+    color: #fff !important;
+}
+
+@media (max-width: 991px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    .mobile-top-fix {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    .mobile-bottom-fix {
+        margin-bottom: 30px;
+    }
+    .mobile-bottom-fix-big {
+        margin-bottom: 60px;
+    }
+}
+
+.section-heading {
+    position: relative;
+    z-index: 2;
+}
+
+.section-heading h4 {
+    color: #2a2a2a;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+
+.section-heading h4 em {
+    font-style: normal;
+    color: #4b8ef1;
+}
+
+.section-heading img {
+    width: 45px;
+    height: 2px;
+}
+
+.section-heading p {
+    margin-top: 10px;
+}
+
+.show-up {
+    position: relative;
+    z-index: 2;
+}
+
+.white-button a {
+    display: inline-block !important;
+    padding: 10px 20px !important;
+    color: #4b8ef1 !important;
+    text-transform: capitalize;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 23px;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+    transition: all .5s;
+}
+
+.white-button a i {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.white-button a:hover {
+    background-color: #4b8ef1;
+    color: #fff !important;
+}
+
+.text-button a {
+    font-size: 15px;
+}
+
+.text-button a i {
+    margin-left: 5px;
+    font-size: 14px;
+    transition: all .3s;
+}
+
+.text-button a:hover i {
+    margin-left: 8px;
+}
+
+.gradient-button {
+    display: inline-block !important;
+    padding: 10px 20px !important;
+    color: #fff !important;
+    text-transform: capitalize;
+    font-size: 15px;
+    background: rgb(19, 175, 240);
+    background: linear-gradient(105deg, rgba(91, 104, 235, 1) 0%, rgba(40, 225, 253, 1) 100%);
+    border-radius: 23px;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+    transition: all .5s;
+}
+
+.border-button a {
+    display: inline-block !important;
+    padding: 10px 20px !important;
+    color: #4b8ef1 !important;
+    border: 1px solid #4b8ef1;
+    text-transform: capitalize;
+    font-size: 15px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 23px;
+    font-weight: 500 !important;
+    letter-spacing: 0.3px !important;
+    transition: all .5s;
+}
+
+.border-button a:hover {
+    background-color: #4b8ef1;
+    color: #fff !important;
 }
